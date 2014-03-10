@@ -8,7 +8,7 @@ Crunchbase Python API
 Installation
 ------------
 
-sudo pip install crunchbase
+    $ sudo pip install crunchbase
 
 Usage
 -----
