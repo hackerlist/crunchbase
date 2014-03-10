@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+#-*- coding: utf-8 -*-
+
+"""
+    crunchbase
+    ~~~~~~~~~~
+    Crunchbase unofficial API
+
+    :copyright: (c) 2014 by Hackerlist, Inc
+    :license: see LICENSE
+"""
+
+from crunchbase import Crunchbase
+
+if __name__ == "__main__":
+    parser = argparser()
+    args = parser.parse_args()
+
+    if not (args.entity or args.name):
+        raise AttributeError("Entity type -e and name -n required")
+
+    if not args.token:
+        raise AttributeError("Crunchbase API Token required: -t ")
+    cb = Crunchbase(args.token)
+    print cb.get(args.entity, args.name)
