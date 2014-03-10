@@ -10,7 +10,7 @@
     :license: see LICENSE
 """
 
-from crunchbase import Crunchbase
+from crunchbase import Crunchbase, argparser
 
 if __name__ == "__main__":
     parser = argparser()
