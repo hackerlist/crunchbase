@@ -1,7 +1,7 @@
 crunchbase
 ==========
 
-![Build Status](https://travis-ci.org/hackerlist/crunchbase.png)
+[![Build Status](https://travis-ci.org/hackerlist/crunchbase.png?branch=master)](https://travis-ci.org/hackerlist/crunchbase)
 
 Crunchbase Python API
 
